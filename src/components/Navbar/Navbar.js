@@ -3,7 +3,7 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/calendar-minimalist.png'
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className='nav-container'>
             <div className='left-nav-container'>
@@ -11,8 +11,13 @@ const Navbar = () => {
                 <div className='nav-items'>calendar title</div>
             </div>
             <div className='right-nav-container'>
-                <div className='nav-items'>arrows</div>
-                <div className='nav-items'>2020</div>
+                <div className='nav-items'>
+                    <i class="arrow left" onClick={props.decYear}></i>
+                </div>
+                <div className='nav-items'>{props.year}</div>
+                <div className='nav-items'>
+                    <i class="arrow right" onClick={props.incYear}></i>
+                </div>
                 <div className='nav-items'>other displays...</div>
             </div>
         </div>
