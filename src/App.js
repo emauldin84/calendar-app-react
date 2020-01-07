@@ -3,6 +3,7 @@ import './App.css';
 import moment from 'moment'
 
 import Navbar from './components/Navbar/Navbar'
+import Calendar from './components/Calendar/Calendar'
 
 function App() {
   const [year, setYear] = useState(moment().year())
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Navbar year={year} decYear={handleDecYear} incYear={handleIncYear}/>
-      
+      <Calendar />
     </div>
   );
 }
