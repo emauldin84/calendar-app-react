@@ -40,6 +40,10 @@ i {
     padding: 3px;
 }
 
+.year {
+    width: 40px;
+}
+
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -48,4 +52,20 @@ i {
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+.arrow-containers {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.arrow-containers:hover {
+    background: #e0e0e0;
+
 }

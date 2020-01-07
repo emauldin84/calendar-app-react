@@ -11,12 +11,12 @@ const Navbar = (props) => {
                 <div className='nav-items'>calendar title</div>
             </div>
             <div className='right-nav-container'>
-                <div className='nav-items'>
-                    <i class="arrow left" onClick={props.decYear}></i>
+                <div className='nav-items arrow-containers' onClick={props.decYear}>
+                    <i class="arrow left"></i>
                 </div>
-                <div className='nav-items'>{props.year}</div>
-                <div className='nav-items'>
-                    <i class="arrow right" onClick={props.incYear}></i>
+                <div className='nav-items year'>{props.year}</div>
+                <div className='nav-items arrow-containers' onClick={props.incYear}>
+                    <i class="arrow right"></i>
                 </div>
                 <div className='nav-items'>other displays...</div>
             </div>
