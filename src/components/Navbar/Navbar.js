@@ -1,12 +1,13 @@
 import React from 'react'
 
 import './Navbar.css'
+import logo from '../../assets/calendar-minimalist.png'
 
 const Navbar = () => {
     return (
         <div className='nav-container'>
             <div className='left-nav-container'>
-                <div className='nav-items'>logo</div>
+                <img className='nav-items logo' src={logo}/>
                 <div className='nav-items'>calendar title</div>
             </div>
             <div className='right-nav-container'>
