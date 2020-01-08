@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
-import moment from 'moment'
 
 import Navbar from './components/Navbar/Navbar'
 import Calendar from './components/Calendar/Calendar'
 
 function App() {
-  const [year, setYear] = useState(moment().year())
+  const [year, setYear] = useState(new Date().getFullYear())
 
   const handleDecYear = () => {
     setYear(year - 1)
