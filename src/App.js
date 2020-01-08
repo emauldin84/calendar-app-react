@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Navbar year={year} decYear={handleDecYear} incYear={handleIncYear}/>
-      <Calendar />
+      <Calendar year={year}/>
     </div>
   );
 }

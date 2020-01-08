@@ -2,10 +2,10 @@ import React from 'react'
 
 import Month from '../Month/Month'
 
-const Calendar = () => {
+const Calendar = (props) => {
     return (
         <div>
-            <Month/>
+            <Month year={props.year}/>
         </div>
     )
 }
